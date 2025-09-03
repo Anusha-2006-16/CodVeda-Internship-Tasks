@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    border: 2px solid black;
+    width: 250px;
+    margin:200px auto;
+    padding: 10px;
+}
+.box .val{
+    margin: 20px;
+    font-size: 70px;
+}
+.box .btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box .btns button{
+    margin: 10px;
+    padding: 3px;
+    font-size: 29px;
+    height: 50px;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: cadetblue;
+    border-radius: 13px;
+    color: whitesmoke;
+}
