@@ -1,0 +1,94 @@
+/* App background with gradient */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the weather card */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 430px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.container input{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 3px;
+}
+/* Weather image */
+.container > img {
+  width: 180px;
+  height: auto;
+  margin: 15px 0;
+}
+
+/* Temperature and description */
+.temp h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #817979;
+}
+
+.temp h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #625f5f;
+}
+
+/* Conditions section */
+.conditions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Each condition box */
+.humidity, .winds {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+/* Icon style */
+.humidity span i,
+.winds span i {
+  font-size: 1.8rem;
+  color: #464040;
+}
+
+/* Text inside humidity/winds */
+.humidity div h4,
+.winds div h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #383535;
+}
+
+.humidity div h5,
+.winds div h5 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5e5a5a;
+}
